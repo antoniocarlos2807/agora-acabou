@@ -1,0 +1,139 @@
+body {
+    background-color:  #f0f0f0; /* Fundo branco */
+    color: #444444; /* Texto em cinza grafite */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s; /* Adiciona transição suave */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: #1b1b1b; /* Cinza grafite */
+    color: #ffffff; /* Texto em branco */
+    padding: 0px 0;
+    text-align: center;
+}
+
+.footer {
+    background-color: #f0f0f0; /* Cinza grafite */
+    color: #000000; /* Texto em branco */
+    padding: 0px 0;
+    text-align: center;
+    width: 100%; /* Ocupa toda a largura da página */
+    position: fixed; /* Fixa o rodapé */
+    bottom: 0; /* Alinha o rodapé na parte inferior da página */
+}
+
+.dark-mode {
+    background-color: #444444; /* Fundo cinza grafite */
+    color: #ffffff; /* Texto branco */
+}
+
+.dark-mode .header {
+    background-color: #1b1b1b; /* Fundo cinza grafite */
+    color: #ffffff; /* Texto branco */
+}
+.dark-mode .footer {
+    background-color: #444444; /* Fundo cinza grafite */
+    color: #ffffff; /* Texto branco */
+}
+
+.dark-mode .content-background {
+    background-color: #444444; /* Fundo cinza grafite */
+    color: #ffffff; /* Texto branco no modo escuro */
+}
+
+.light-mode .content-background {
+    background-color: #ffffff; /* Fundo branco */
+    color: #000000; /* Texto preto no modo claro */
+}
+
+.light-mode body {
+    background-color: #f0f0f0; /* Fundo branco */
+    color: #444444; /* Texto em cinza grafite */
+}
+
+.light-mode .header {
+    background-color: #1b1b1b; /* Cor de fundo do cabeçalho no modo claro */
+    color: #e0e0e0; /* Cor do texto no cabeçalho no modo claro */
+}
+
+.light-mode .footer {
+    background-color: #f0f0f0; /* Cor de fundo do rodapé no modo claro */
+    color: #444444; /* Cor do texto no rodapé no modo claro */
+}
+
+/* Adiciona estilo aos botões */
+.button {
+    background-color: #5ebaf7;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Adiciona transição suave */
+}
+
+.button:hover {
+    background-color: #92cbda;
+    color: #f0f0f0;
+}
+
+#actorsButton, #loginButton {
+    margin-right: 10px;
+}
+
+#darkModeButton {
+    margin-left: 10px;
+}
+
+.mode-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.icon-moon,
+.icon-sun {
+    vertical-align: middle;
+}
+
+.dark-mode .icon-moon {
+    display: none;
+}
+
+.light-mode .icon-sun {
+    display: none;
+}
+
+.mode-button {
+    position: fixed; /* Define a posição fixa */
+    top: 20px; /* Distância do topo da página */
+    right: 20px; /* Distância da direita da página */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 999; /* Garante que o botão esteja acima de outros elementos */
+}
+/* Classe para o fundo do conteúdo principal */
+.content-background {
+    background-color: #ffffff; /* Fundo branco */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    box-shadow: 23px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 30px; /* Espaçamento interno */
+    margin-top: 30px; /* Espaçamento superior */
+    border-radius: 15px; /* Bordas arredondadas */
+}
+.centered-image {
+    display: block; /* Torna a imagem um bloco */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    max-width: 50%; /* Limita a largura máxima da imagem */
+    height: auto; /* Altura automática para manter a proporção */
+}
